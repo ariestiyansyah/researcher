@@ -1,0 +1,29 @@
+<html>
+    <head>
+       <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+       <meta http-equiv="Pragma" content="no-cache">
+       <meta http-equiv="Expires" content="0">
+       <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+       <link href="/assets/style.css" rel="stylesheet" type="text/css">
+       <title>{{post.title}} </title>
+     </head>
+     <body>  
+       <h1>oonlab.com</h1> 
+       <div id="header">
+         Lab of Ariestiyansyah<br>
+       </div>
+       <hr class="lab">
+       {% include menu.html %}
+    <a name="course">
+    <h2>{{page.title}}</h2>
+    <hr class="break">
+    {% include metapost.html%}
+    <hr class="break">
+    <p>{{content}}</p>
+    <hr class="break">
+    {% include share.html %}
+    {% include postnav.html %}<br>
+    <hr class="break">  
+    </body>
+    {% include footer.html %}
+    </html>

@@ -1,0 +1,14 @@
+<p>
+<div style="width:100%"><div style="float:left">
+    {% if page.previous.url %} 
+        <a href="{{ page.previous.url | prepend: site.baseurl }}"><span class="optional">&laquo;&nbsp; {{ page.previous.title }}</span>
+    </a>
+    {% endif %}  
+</div>
+<div style="float:right">
+    {% if page.next.url %}  
+        <a href="{{ page.next.url | prepend: site.baseurl }}"><span class="optional">{{ page.next.title }} &nbsp;&raquo;</span>
+        </a>
+    {% endif %} 
+</div>
+</p>
